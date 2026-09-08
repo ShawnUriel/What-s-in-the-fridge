@@ -6,4 +6,4 @@ I don't want to think, I don't want to read a memoir about someone's summer in F
 
 I need a tool that completely eliminates the cognitive load of meal planning. A simple, no-nonsense engine where I check off the ingredients I currently have, and it instantly filters out the noise to tell me exactly what I can cook right now. Building this saves me from decision fatigue, cuts down on my grocery waste, and gives me back the hours I usually lose to scrolling through recipe sites.
 
-That's where this "What's in the fridge", a web app where users select the ingredients they currently have, and the system filters a database to suggest meals they can cook right now.
+That's where "What's in the fridge" comes in, a web app where users select the ingredients they currently have, and the system filters a database to suggest meals they can cook right now.
