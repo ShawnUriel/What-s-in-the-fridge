@@ -1,0 +1,45 @@
+:root {
+  /* Surfaces: light gray, almost white, with paper-warm undertone */
+  --bg: #f5f4f1;
+  --surface: #fffefc;
+  --surface-sunk: #faf9f6;
+
+  /* Hairlines */
+  --border: #e6e2da;
+  --border-strong: #d7d1c6;
+
+  /* Ink */
+  --text: #1f1c19;
+  --text-soft: #4a443d;
+  --muted: #8b8479;
+
+  /* Orange accent */
+  --orange: #d2691e;
+  --orange-deep: #a8500f;
+  --orange-soft: #fbeee2;
+  --orange-line: #eed6bd;
+
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  font-family: var(--sans);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font: inherit; }
+
+/* Small-caps label treatment used for every eyebrow/legend in the cookbook. */
+.u-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  font-weight: 600;
+}

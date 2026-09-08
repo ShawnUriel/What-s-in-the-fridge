@@ -1,0 +1,87 @@
+.app { min-height: 100vh; }
+
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 32px 30px;
+  text-align: center;
+}
+
+.headerInner { max-width: 1140px; margin: 0 auto; }
+
+.eyebrow {
+  display: block;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.66rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+/* Thin double rule - the classic cookbook chapter divider. */
+.rule {
+  width: 132px;
+  margin: 18px auto 14px;
+  border-top: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border-strong);
+  height: 3px;
+  position: relative;
+}
+
+.rule::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: var(--orange);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 274px 1fr;
+  gap: 34px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 34px 32px 64px;
+  align-items: start;
+}
+
+.main { min-width: 0; }
+
+.error {
+  margin: 0 0 18px;
+  padding: 13px 16px;
+  border: 1px solid var(--orange-line);
+  border-left: 3px solid var(--orange);
+  background: var(--orange-soft);
+  color: var(--orange-deep);
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 780px) {
+  .layout { grid-template-columns: 1fr; padding: 24px 20px 48px; }
+  .title { font-size: 2rem; }
+  .header { padding: 32px 20px 24px; }
+}

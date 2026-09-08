@@ -1,0 +1,19 @@
+{
+  "name": "whats-in-my-fridge-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Express + raw pg backend for the What's in My Fridge? recipe engine",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "psql \"$DATABASE_URL\" -f db/schema.sql"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
